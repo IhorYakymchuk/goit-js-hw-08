@@ -10,7 +10,6 @@ const galleryList = document.querySelector('.gallery')
 const markupGallery = createGallery(galleryItems);
 galleryList.insertAdjacentHTML('beforeend', markupGallery);
 
-// galleryList.addEventListener("click",onGalleryContainerClick)
 
 function createGallery(items) {
     return items.map(({preview,original,description}) => {return `<div class ="gallery__item">
@@ -25,34 +24,6 @@ function createGallery(items) {
 
 let lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: '250' });
 
-
-
-
-// let instance;
-
-// function onGalleryContainerClick(evt) {
-//     evt.preventDefault();
-//     if (evt.target.nodeName !== "IMG") {
-//         return
-//     };
-//      instance = basicLightbox.create(
-//          `<img src="${evt.target.dataset.source}"/>`, {
-//      onShow: instance => {
-//         document.addEventListener('keydown', onModalCloseToEscape);
-//     },
-//       onClose: instance => {
-//         document.removeEventListener('keydown', onModalCloseToEscape);
-//       }
-//    }
-//      );
-//     instance.show();
-// }
-
-// function onModalCloseToEscape(evt) {
-//     if (evt.code === "Escape") {
-//         instance.close();
-//     }
-// }
 
 
 
