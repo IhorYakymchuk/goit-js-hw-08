@@ -22,7 +22,11 @@ function createGallery(items) {
         </div>`}).join("");
 }
 
-let lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: '250' });
+ new SimpleLightbox('.gallery a', {
+  captions: true,
+  captionsData: 'alt',
+  captionDelay: 250,
+});
 
 
 
